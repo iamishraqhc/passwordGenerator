@@ -28,5 +28,5 @@ if (save) {
 clipboardy.writeSync(generatedPassword)
 
 // Output generated password
-console.log(chalk.blue('Generated Password: ') + chalk.bold(generatedPassword))
+console.log(chalk.blueBright('Generated Password: ') + chalk.bold(generatedPassword))
 console.log(chalk.green('Password copied to clipboard'))
