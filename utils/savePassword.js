@@ -13,4 +13,4 @@ const savePassword = (password) => {
     })
 }
 
-module.exports =savePassword
+module.exports = savePassword

@@ -8,10 +8,10 @@ const savePassword = require('./utils/savePassword')
 commander.version('1.0.0').description('Simple Password Generator')
 
 commander
-.option('-l, --length <number>', 'length of password', '8')
 .option('-s, --save', 'save password to passwords.txt')
-.option('-nn, --no-numbers', 'remove numbers')
-.option('-ns, --no-symbols', 'remove symbols')
+.option('-l, --length <number>', 'length of the password', '10')
+.option('-nn, --no-numbers', 'remove numbers from password generation')
+.option('-ns, --no-symbols', 'remove symbols from password generation')
 .parse()
 
 const { length, save, numbers, symbols } = commander.opts()
